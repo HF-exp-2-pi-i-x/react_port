@@ -23,7 +23,7 @@ const Navbar = ()=>{
   return (
     <div className="nav">
       <Link className="logo"
-            to="/" >
+            to="/react_port" >
         <img src={Navlogo} alt="logo" />
         <div className="text">
           React Project
@@ -31,13 +31,13 @@ const Navbar = ()=>{
       </Link>
      <div className="icons">
 
-      <Icon pic={<FaHome />} location="/" class_name=""/>
+      <Icon pic={<FaHome />} location="/react_port" class_name=""/>
 
-      <Icon pic={<BiUserPin />} location="/about" class_name="about-link"/>
+      <Icon pic={<BiUserPin />} location="/react_port/about" class_name="about-link"/>
 
-      <Icon pic={<FaPaintBrush />} location="/portfolio" class_name="portfolio-link"/>
+      <Icon pic={<FaPaintBrush />} location="/react_port/portfolio" class_name="portfolio-link"/>
 
-      <Icon pic={<FaEnvelope />} location="/contact" class_name="contact-link"/>
+      <Icon pic={<FaEnvelope />} location="/react_port/contact" class_name="contact-link"/>
 
      </div>
       <div className="toggle">
