@@ -1,0 +1,44 @@
+html,body {
+  margin: 0;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 300;
+  font-size: 19px;
+  color: var(--color-text);
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: auto;
+}
+
+#root{
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px auto 50px;
+
+  --color-primary: rgb(0, 0, 0);
+  --color-secondary: rgb(2, 179, 64);
+  --color-text: bisque;
+  --color-title: white;
+  --color-subtitle: #7cfc00;
+  --color-para: 	#36cdeb;
+}
+
+// a{
+//   text-decoration: none;
+//   color: inherit;
+// }
+
+// size of map
+.leaflet-container {
+  width: 80vh; 
+  height: 80vh;
+}
+
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

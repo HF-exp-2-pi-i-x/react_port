@@ -1,0 +1,96 @@
+.text-zone{
+  grid-column: 1;
+  // place text at center
+  display:block;
+  margin: auto auto;
+
+ 
+  h1{
+    font-size: 60px;
+    line-height: 30px;
+    font-weight: 900;
+    color: var(--color-title);
+  }
+  h4{
+    color: var(--color-subtitle);
+    text-decoration: underline;
+
+    animation: lightSpeedInLeft;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+  }
+  button{
+    width: 30%;
+    height: 50px;
+    background-color: gold;
+    color: darkslategray;
+    font-size: 21px;
+    border-radius: 7px;
+    border: 2px solid rgb(142, 121, 2);
+  }
+}
+
+.graphics{
+  position: relative;
+  grid-column: 2;
+  background-color: rgba(255, 235, 205, 0.215);
+
+  .outline-logo{
+    z-index: 1;
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    
+    animation: fadeOutSVG 7s forwards;
+    @keyframes fadeOutSVG{
+      from,90%{
+        opacity: 1;
+      }
+      to{
+        opacity: 0;
+      }
+    }
+
+
+    svg{
+      .eclipse-path{
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: dash 5s linear forwards ;
+      }
+      @keyframes dash{
+        to{
+          stroke-dashoffset: 0;
+        }
+      }
+  
+      .circle-path{
+        stroke-dasharray: 200;
+        stroke-dashoffset: 200;
+        animation: dash 5s linear forwards ;
+      }
+      @keyframes dash{
+        to{
+          stroke-dashoffset: 0;
+        }
+      }
+    }
+  }
+  .solid-logo{
+    position: absolute;
+    left: 20%;
+    top: 10%;
+
+    animation: fadeInSVG 7.5s forwards;
+    @keyframes fadeInSVG {
+      from,90%{
+        opacity: 0;
+      }
+      to{
+        opacity: 1;
+      }
+    }
+  }
+  
+}

@@ -1,0 +1,95 @@
+.contact{
+  padding: 5rem 3rem;
+  h1{
+    color: var(--color-title);
+    text-align:left
+  }
+  p{
+    color: var(--color-para);
+    text-align: justify;
+  }
+
+  .contact-form{
+    width: 100%;
+    margin-top: 3rem;
+
+    ul{
+      margin: 0;
+      padding: 0;
+      li{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        position: relative;
+        display: block;
+        clear: both;
+        overflow: hidden;
+        margin-bottom: 10px;
+        border-radius: 3px;
+      }
+      li.half{
+        width: 49%;
+        margin-left: 2%;
+        clear: none;
+        float: left;
+        &:first-child{
+          margin-left: 0;
+        }
+      }
+    }
+    input[type="text"],input[type="email"]{
+      width: 100%;
+      border: 0;
+      background: var(--color-secondary);
+      font-size: 16px;
+      color: var(--color-text);
+      height: 50px;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+
+    textarea{
+      width: 100%;
+      border: 0;
+      background: var(--color-secondary);
+      box-sizing: border-box;
+      min-height: 150px;
+      font-size: 19px;
+      padding: 0 20px;
+    }
+
+    .flat-button {
+      color: #ffd700;
+      font-size: 19px;
+      letter-spacing: 3px;
+      text-decoration: none;
+      padding: 8px 10px;
+      border: 1px solid #ffd700;
+      float: left;
+      border-radius: 4px;
+      background: 0 0;
+      text-transform: uppercase;
+      float:left;
+      text-align: center;
+    }
+
+  }
+}
+
+.leaflet{
+  position: relative;
+  .info{
+    background-color: gold;
+    color: var(--color-primary);
+    width: fit-content;
+    border-radius: 5px;
+    z-index: 99999;
+    position: absolute;
+    left: 5%;
+    top: 20%;
+  }
+  .map{
+    position: absolute;
+    top: 5%;
+  }
+}

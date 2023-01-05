@@ -1,0 +1,26 @@
+.text-animation{
+  display: inline-block;
+  min-width: 10px;
+  animation: fadeInDown;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+}
+
+@for $i from 1 through 42{
+  .text-animation._#{$i}{
+    animation-delay: #{calc($i/10)}s 
+  }
+}
+
+.text-animation-hover{
+  display: inline-block;
+  min-width: 10px;
+  animation-fill-mode: both;
+  
+  &:hover{
+    animation: rubberBand 1s;
+    color:gold;
+  }
+}
+
